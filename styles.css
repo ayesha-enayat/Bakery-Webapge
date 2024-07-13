@@ -1,0 +1,984 @@
+:root{
+    --main-color:rgb(51, 255, 218);
+    --nav-color:#00afa5;
+    --bgcolor:#e8f3f1;
+    --black:#2f4858;
+ 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all ease-in;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--bgcolor);
+    margin:0;
+    padding:0;
+    
+   
+}
+/* <!--header styling--> */
+.header{
+
+    background-color:rgb(255, 230, 234);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem 7%;
+    display: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+     
+    
+}
+.header .logo img{
+     height: 10rem;
+    
+}
+.header .navbar a{
+    color:var(--black);
+    font-size: 2rem;
+    margin:0 1rem;
+   
+}
+.header .navbar a:hover{
+    color:black;
+    border-bottom: .3rem solid var(--main-color);
+    padding-bottom: .5rem;
+    
+}
+.header .icons{
+    display: flex;   
+}
+.header .menu-icon i{
+  color:var(--black);
+  margin-left: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+
+   
+  
+}
+.header .menu-icon i:hover{
+    color:black;
+
+    }
+
+
+.header .icons div i{
+    color:var(--black); 
+    font-size: 3rem;
+    cursor: pointer;
+    padding:10px;
+  
+}
+.header .icons div i:hover{
+    color:black;
+    border-bottom: .3rem solid var(--main-color);
+    padding-bottom: .5rem;
+    }
+
+ .header button{
+    padding: 15px;
+    border:1px solid white;
+    border-radius: 25px;
+    color:black;
+    background-color:var(--nav-color) ;
+    font-size: rem;
+    cursor: pointer;
+   
+
+
+}
+ button:hover{
+    background-color: var(--main-color); 
+    color:var(--black);
+    border-color: black;
+}
+
+/* hero section */
+.hero{
+    position: relative;
+    min-height: 100vh; 
+    width:100%;
+    top: 0;
+    left: 0;
+    right:0;
+   
+   
+  }
+  
+  .hero video {
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: fixed;
+   
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%, -50%);  /*Center content vertically and horizontally */
+    color: white;  
+    
+  }
+  
+  .hero-text h1 {
+    font-size:7rem ;
+    -webkit-text-stroke: 1.5px black;
+  }
+  .hero-text h2{
+     font-size: 3rem;
+    margin-bottom: 35px;
+    -webkit-text-stroke: 1.5px black;
+
+  }
+
+  /*hero-buuton*/
+  
+  .hero-text .btn2{
+    padding: 15px;
+    border:1px solid white;
+    border-radius: 25px;
+    color:black;
+    background-color:var(--nav-color) ;
+    font-size: 2rem;
+    cursor: pointer;
+   
+
+
+}
+ .btn2:hover{
+    background-color: var(--main-color); 
+    color:var(--black);
+    border-color: black;
+ }
+  
+  
+
+
+  /* our specialties section */
+ 
+  
+  .our-spacialties-section h1{
+    font-size: 6rem;
+    text-align: center;
+    padding: 10px;
+  
+
+  }
+  .our-spacialties-section .gallery{
+    width:80%;
+    margin:10px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap:50px;
+    }
+    .our-spacialties-section .gallery figure{
+     width:100%;
+    margin-bottom: 5px;
+     
+    }
+   .our-spacialties-section .gallery  img{
+    width:100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .our-spacialties-section .gallery figcaption{
+    width:100%;
+    color:rgb(0, 0, 0);
+    font-size: 3rem;
+    text-align: center;
+    padding:20px;
+  }
+
+   
+  .our-spacialties-section .gallery  img:hover{
+  
+    transform: scale(1.1);
+  }
+
+
+  
+/* magic procesing box */
+.magicprocessing-box{
+  display:grid;
+  place-items: center;
+  width:100%;
+  height:100vh;
+  background: url(images/delicious-cheese-bread-assortment_23-2149042462.avif);
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+}
+.magicprocessing-box .overlay{
+  display:grid;
+  place-items: center;
+  width:100%;
+  height:100vh;
+  position: absolute;
+  background: rgba(5, 206, 169, 0.7);
+}
+
+
+.magicprocessing-box .inner-box{
+  display: grid;
+  place-content: center;
+  place-items:center ;
+  /* background-color: #2f4858; */
+  width:90%;
+  height:90%;
+  border-radius: 13px; 
+  border:2px solid rgb(255, 255, 255);
+
+}
+.magicprocessing-box .inner-box  div{
+  font-size:9rem;
+  color: white;
+ 
+} 
+.magicprocessing-box .inner-box h2{
+  font-size:6rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  
+
+}
+.magicprocessing-box .discover-button{
+  color:white;
+  background-color: var(--nav-color);
+  text-align: center;
+  border:1px solid rgb(0, 0, 0);
+  border-radius: 13px;
+  padding:20px;
+  font-size: 3rem;
+  margin: 40px;
+  
+}
+.magicprocessing-box .discover-button:hover{
+  cursor: pointer;
+  background-color: var(--main-color);
+  color:var(--black);
+}
+
+/* our creation box */
+.our-creation div {
+  color:fuchsia;
+  font-size: 9rem;
+  text-align: center;
+  margin:20px;
+}
+
+.our-creation h2{
+  font-size:6rem ;
+  text-align: center;
+  padding:10px;
+ 
+}
+
+ .our-creation .our-creation-images{
+  width:80%;
+    margin:10px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap:20px;
+    }
+    
+    
+   .our-creation  img{
+    width:100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+.our-creation .our-creation-images img:hover{
+  transform: scale(1.1)
+ }
+
+ .recipes-for-you{
+  width:100%;
+  height:100vh;
+background: url(images/promotion.jpg);
+  text-align: center;
+
+
+ }
+  .recipes-for-you div i{
+    
+    font-size: 8rem;
+    
+    color:fuchsia;
+    text-align: center;
+    margin:10px;
+  }
+.recipes-for-you h1{
+  
+  font-size: 5rem;
+
+  color:black;
+}
+.recipes-for-you h2{
+  padding:10px;
+  font-size: 2rem;
+ 
+  color: rgb(0, 0, 0);
+}
+.recipes-for-you img{
+  border-radius: 50%;
+  width:140px;
+  margin-top:20px;
+
+}
+
+/* our chefs */
+.our-chefs{
+  background: url(images/parallax-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-chefs  h1{
+  text-align: center;
+  font-size: 5rem;
+
+  
+  
+}
+.team{
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.6rem;
+  margin:10px;
+  padding: 30px;
+place-items: center;
+}
+.our-chefs .team .team-members img{
+  height:200px;
+  width:200px;
+  border-radius: 50px;
+  border:1px solid var(--nav-color);
+  cursor:pointer;
+  
+ 
+}
+.our-chefs .team .team-members h3{
+  padding:10px;
+}
+.our-chefs .team .team-members p{
+  padding:20px;
+
+}
+.our-chefs .team .team-members img:hover{
+  transform:scaleX(1.1);
+}
+/* cakes price */
+.special-cakes-price{
+  background: url(images/flat-lay-bakery-composition-with-copyspace_23-2148189370.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  height: 100vh;
+}
+
+.special-cakes-price h1{
+  text-align: center;
+  font-size: 5rem;
+ 
+}
+.special-cakes-price div{
+ 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+  
+ table{
+ 
+  font-size: 3rem;
+ 
+}
+.content-table thead tr{
+  color: hsl(0, 0%, 0%);
+  text-align: center;
+  font-weight: bold;
+  
+}
+.content-table th,
+.content-table td{
+  padding: 12px 15px;
+  
+}
+.content-table tbody tr td{
+  border-bottom: 1px solid #fb9393;
+}
+
+.get-our-sweets{
+  height:60vh;
+  
+  text-align: center;
+  padding:10px 0;
+  
+
+}
+.get-our-sweets h1{
+  font-size: 4rem;
+  padding:50px 0;
+  color: rgb(0, 0, 0);
+
+
+
+}
+.get-our-sweets input{
+  border:2px solid black;
+  border-radius: 10px;
+  font-size: 3rem;
+
+}
+.get-our-sweets input:hover{
+  border:2px solid var(--nav-color);
+  border-radius: 10px;
+  font-size: 3rem;
+}
+.get-our-sweets label{
+  font-size: 4rem;
+  color: rgb(0, 0, 0);
+}
+.get-our-sweets-icons{
+  display: flex;  
+  align-items: center;
+  margin-top:20px;
+  padding:10px;
+  justify-content: center;
+
+}
+.get-our-sweets-icons{
+  color:black;
+  margin-left: 2rem;
+  font-size: 6rem;
+  cursor: pointer;
+ 
+
+}
+.get-our-sweets-icons div i{
+  padding:20px;
+}
+.get-our-sweets-icons div i:hover{
+  transform: scale(1.1);
+  color: #f76d6d;
+}
+.footer{
+  height:30vh;
+  background-color:rgb(214, 214, 214);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 7%;
+    display: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 2.2rem;
+}
+
+.footer .logo img{
+  
+  width:100px;
+  height:100px;
+
+
+}
+
+.footer nav a{
+  text-decoration: none;
+    color:black;
+    margin:0 1rem;
+   
+}
+.footer div a{
+  text-decoration: none;
+  color:black;
+  margin:0 1rem;
+}
+.footer .nav2 a:hover{
+    color:black;
+    
+    border-bottom: .3rem solid var(--main-color);
+ 
+    padding-bottom: .5rem;
+  
+}
+@media only screen and (max-width: 767px) {
+
+  /* Header */
+  .header{
+    justify-content: space-around;
+  }
+  .header .navbar a {
+display:none;
+  }
+  .header .menu-icon i{
+    display:block;
+    font-size: 3.5rem;
+  }
+
+  .header .icons div i {
+    display: none;
+  }
+
+  .header button {
+   display: none;
+  }
+
+  /* Hero Section */
+  .hero-text h1 {
+    font-size: 4.4rem;
+    
+    
+
+  }
+
+  .hero-text h2 {
+    font-size: 2.5rem;
+    
+
+  }
+
+  .hero-text .btn2 {
+    padding: 10px;
+    font-size: 1.8rem;
+  }
+
+  /* Our Specialties Section */
+  .our-spacialties-section h1 {
+    font-size: 4rem;
+  }
+
+  .our-spacialties-section .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .our-spacialties-section .gallery figcaption {
+    font-size: 2.5rem;
+    padding: 15px;
+  }
+
+  /* Magic Processing Box */
+  .magicprocessing-box .inner-box div {
+    font-size: 7rem;
+  }
+
+  .magicprocessing-box .inner-box h2 {
+    font-size: 4rem;
+  }
+
+  .magicprocessing-box .discover-button {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+
+  /* Our Creation Box */
+  .our-creation div {
+    font-size: 7rem;
+    margin: 15px;
+  }
+
+  .our-creation h2 {
+    font-size: 4rem;
+  }
+
+  .our-creation .our-creation-images {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  /* Recipes for You */
+  
+  .recipes-for-you h1 {
+    font-size: 3rem;
+  }
+
+  .recipes-for-you h2 {
+    font-size: 1.5rem;
+    padding: 0px;
+  }
+
+  /* Our Chefs */
+  .our-chefs .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-chefs .team .team-members img {
+    height: 150px;
+    width: 150px;
+  }
+
+  /* Special Cakes Price */
+  .special-cakes-price table {
+    font-size: 2rem;
+  }
+
+  /* Get Our Sweets */
+  .get-our-sweets h1 {
+    font-size: 3rem;
+    padding: 30px 0;
+  }
+
+  .get-our-sweets input {
+    font-size: 2rem;
+  }
+
+  .get-our-sweets label {
+    font-size: 2rem;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+  
+    
+
+    font-size: 1.8rem;
+    
+  }
+
+  .footer .logo img {
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+  }
+  .footer nav a{
+   font-size: 1.6rem;
+   padding:0px;
+   margin:0px;
+     
+  }
+  .footer div a{
+   font-size:1.6rem;
+  }
+  
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  /* Header */
+  .header .navbar a {
+    font-size: 1.6rem;
+  }
+
+  .header .icons div i {
+    display:none;
+  }
+
+  .header button {
+    font-size: 1.6rem;
+    padding: 10px;
+  }
+
+  /* Hero Section */
+  .hero-text h1 {
+    font-size: 5rem;
+    padding:0px;
+    
+  }
+
+ 
+
+  .hero-text h2 {
+    font-size: 2.2rem;
+    
+
+  }
+
+  .hero-text .btn2 {
+   
+    font-size: 1.8rem;
+  }
+
+  /* Our Specialties Section */
+  .our-spacialties-section h1 {
+    font-size: 4rem;
+  }
+
+  .our-spacialties-section .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .our-spacialties-section .gallery figcaption {
+    font-size: 2.5rem;
+    padding: 15px;
+  }
+
+  /* Magic Processing Box */
+  .magicprocessing-box .inner-box div {
+    font-size: 7rem;
+  }
+
+  .magicprocessing-box .inner-box h2 {
+    font-size: 4rem;
+  }
+
+  .magicprocessing-box .discover-button {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+
+  /* Our Creation Box */
+  .our-creation div {
+    font-size: 7rem;
+    margin: 15px;
+  }
+
+  .our-creation h2 {
+    font-size: 4rem;
+  }
+
+  .our-creation .our-creation-images {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* gap:20px; */
+  }
+
+  /* Recipes for You */
+  .recipes-for-you h1 {
+    font-size: 3rem;
+  }
+
+  .recipes-for-you h2 {
+    font-size: 1.5rem;
+    padding: 0px;
+  }
+
+  /* Our Chefs */
+  .our-chefs .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-chefs .team .team-members img {
+    height: 150px;
+    width: 150px;
+  }
+
+  /* Special Cakes Price */
+  .special-cakes-price table {
+    font-size: 2rem;
+  }
+
+  /* Get Our Sweets */
+  .get-our-sweets h1 {
+    font-size: 3rem;
+    
+  }
+
+  .get-our-sweets input {
+    font-size: 2.5rem;
+  }
+
+  .get-our-sweets label {
+    font-size: 3rem;
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 1.8rem;
+    
+  }
+
+  .footer .logo img {
+    width: 80px;
+    height: 80px;
+  }
+  .footer nav a{
+   font-size: 1.6rem;
+   padding:0px;
+   margin:0px;
+     
+  }
+  .footer div a{
+   font-size:1.6rem;
+  }
+  
+
+}
+@media only screen and (min-width: 1023px) and (max-width: 1400px) {
+
+  /* Header */
+  .header .navbar a {
+    font-size: 2rem;
+  }
+
+  .header .icons div i {
+    font-size: 2rem;
+  }
+  .header .menu-icon i{
+    display:none;
+  }
+
+  .header button {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  /* Hero Section */
+  .hero-text h1 {
+    font-size: 6rem;
+   
+    
+  }
+
+ 
+
+  .hero-text h2 {
+    font-size: 3rem;
+    
+
+  }
+
+  .hero-text .btn2 {
+   
+    font-size: 2rem;
+    padding:15px;
+  }
+
+  /* Our Specialties Section */
+  .our-spacialties-section h1 {
+    font-size: 5rem;
+  }
+
+  .our-spacialties-section .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .our-spacialties-section .gallery figcaption {
+    font-size: 2.5rem;
+    padding: 15px;
+  }
+
+  /* Magic Processing Box */
+  .magicprocessing-box .inner-box div {
+    font-size: 7rem;
+  }
+
+  .magicprocessing-box .inner-box h2 {
+    font-size: 4rem;
+  }
+
+  .magicprocessing-box .discover-button {
+    font-size: 2rem;
+    padding: 15px;
+  }
+
+  /* Our Creation Box */
+  .our-creation div {
+    font-size: 7rem;
+    margin: 15px;
+  }
+
+  .our-creation h2 {
+    font-size: 5rem;
+  }
+
+  .our-creation .our-creation-images {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  /* Recipes for You */
+  .recipes-for-you h1 {
+    font-size: 4rem;
+    padding:0px;
+    margin:0px;
+
+  }
+
+  .recipes-for-you h2 {
+    font-size: 2rem;
+    padding: 0px;
+    margin:0px;
+  }
+
+  /* Our Chefs */
+  .our-chefs .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-chefs .team .team-members img {
+    height: 150px;
+    width: 150px;
+  }
+  
+
+  /* Special Cakes Price */
+  
+  .special-cakes-price table {
+    font-size: 1.6rem;
+    padding:0px;
+  }
+
+  /* Get Our Sweets */
+  .get-our-sweets h1 {
+    font-size: 3rem;
+    
+  }
+
+  .get-our-sweets input {
+    font-size: 2.5rem;
+  }
+
+  .get-our-sweets label {
+    font-size: 3rem;
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 2rem;
+    
+  }
+
+  .footer .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .footer nav a{
+   font-size: 2rem;
+   padding:0px;
+   margin:0px;
+     
+  }
+  .footer div a{
+   font-size:2rem;
+  }
+  
+
+}
+
+
+
+
+
